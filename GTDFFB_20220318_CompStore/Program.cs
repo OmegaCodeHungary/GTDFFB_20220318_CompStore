@@ -10,7 +10,11 @@ namespace GTDFFB_20220318_CompStore
     {
         public static FormControl formControl;
 
+        public static FormCart formCart;
+
         public static String itemType = "Összes";
+
+        public static List<Item> shoppingCart = new List<Item>();
     }
 
     internal static class Program
