@@ -17,6 +17,8 @@ namespace GTDFFB_20220318_CompStore
 
         public Image Image { get; set; }
 
+        public int Pieces { get; set; }
+
         public double Price { get; set; }
     }
 }

@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.tlp_main = new System.Windows.Forms.TableLayoutPanel();
-            this.tlp_images = new System.Windows.Forms.TableLayoutPanel();
-            this.panel_items = new System.Windows.Forms.Panel();
-            this.tlp_menu = new System.Windows.Forms.TableLayoutPanel();
-            this.label_cart = new System.Windows.Forms.Label();
-            this.pictureBox_business = new System.Windows.Forms.PictureBox();
             this.tlp_price = new System.Windows.Forms.TableLayoutPanel();
             this.label_total_price = new System.Windows.Forms.Label();
             this.label_tprice = new System.Windows.Forms.Label();
+            this.tlp_menu = new System.Windows.Forms.TableLayoutPanel();
+            this.label_cart = new System.Windows.Forms.Label();
+            this.tlp_images = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox_business = new System.Windows.Forms.PictureBox();
+            this.panel_items = new System.Windows.Forms.Panel();
             this.tlp_main.SuspendLayout();
-            this.tlp_images.SuspendLayout();
-            this.tlp_menu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_business)).BeginInit();
             this.tlp_price.SuspendLayout();
+            this.tlp_menu.SuspendLayout();
+            this.tlp_images.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_business)).BeginInit();
             this.SuspendLayout();
             // 
             // tlp_main
@@ -61,76 +61,8 @@
             this.tlp_main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tlp_main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlp_main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tlp_main.Size = new System.Drawing.Size(604, 461);
+            this.tlp_main.Size = new System.Drawing.Size(804, 461);
             this.tlp_main.TabIndex = 1;
-            // 
-            // tlp_images
-            // 
-            this.tlp_images.ColumnCount = 3;
-            this.tlp_images.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tlp_images.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_images.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tlp_images.Controls.Add(this.pictureBox_business, 1, 0);
-            this.tlp_images.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlp_images.Location = new System.Drawing.Point(3, 3);
-            this.tlp_images.Name = "tlp_images";
-            this.tlp_images.RowCount = 1;
-            this.tlp_images.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_images.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
-            this.tlp_images.Size = new System.Drawing.Size(598, 72);
-            this.tlp_images.TabIndex = 1;
-            // 
-            // panel_items
-            // 
-            this.panel_items.AutoScroll = true;
-            this.panel_items.AutoSize = true;
-            this.panel_items.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_items.Location = new System.Drawing.Point(3, 131);
-            this.panel_items.Name = "panel_items";
-            this.panel_items.Size = new System.Drawing.Size(598, 287);
-            this.panel_items.TabIndex = 2;
-            // 
-            // tlp_menu
-            // 
-            this.tlp_menu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.tlp_menu.ColumnCount = 3;
-            this.tlp_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tlp_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tlp_menu.Controls.Add(this.label_cart, 1, 0);
-            this.tlp_menu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlp_menu.Location = new System.Drawing.Point(2, 80);
-            this.tlp_menu.Margin = new System.Windows.Forms.Padding(2);
-            this.tlp_menu.Name = "tlp_menu";
-            this.tlp_menu.RowCount = 1;
-            this.tlp_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_menu.Size = new System.Drawing.Size(600, 46);
-            this.tlp_menu.TabIndex = 0;
-            // 
-            // label_cart
-            // 
-            this.label_cart.AutoSize = true;
-            this.label_cart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_cart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_cart.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label_cart.Location = new System.Drawing.Point(31, 3);
-            this.label_cart.Margin = new System.Windows.Forms.Padding(3);
-            this.label_cart.Name = "label_cart";
-            this.label_cart.Size = new System.Drawing.Size(538, 40);
-            this.label_cart.TabIndex = 0;
-            this.label_cart.Text = "Shopping Cart";
-            this.label_cart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox_business
-            // 
-            this.pictureBox_business.BackgroundImage = global::GTDFFB_20220318_CompStore.Properties.Resources.forbidden;
-            this.pictureBox_business.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_business.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_business.Location = new System.Drawing.Point(103, 3);
-            this.pictureBox_business.Name = "pictureBox_business";
-            this.pictureBox_business.Size = new System.Drawing.Size(392, 66);
-            this.pictureBox_business.TabIndex = 0;
-            this.pictureBox_business.TabStop = false;
             // 
             // tlp_price
             // 
@@ -147,7 +79,7 @@
             this.tlp_price.Name = "tlp_price";
             this.tlp_price.RowCount = 1;
             this.tlp_price.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_price.Size = new System.Drawing.Size(600, 36);
+            this.tlp_price.Size = new System.Drawing.Size(800, 36);
             this.tlp_price.TabIndex = 3;
             // 
             // label_total_price
@@ -159,7 +91,7 @@
             this.label_total_price.Location = new System.Drawing.Point(153, 3);
             this.label_total_price.Margin = new System.Windows.Forms.Padding(3);
             this.label_total_price.Name = "label_total_price";
-            this.label_total_price.Size = new System.Drawing.Size(294, 30);
+            this.label_total_price.Size = new System.Drawing.Size(494, 30);
             this.label_total_price.TabIndex = 0;
             this.label_total_price.Text = "Total price:";
             this.label_total_price.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -170,7 +102,7 @@
             this.label_tprice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_tprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_tprice.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label_tprice.Location = new System.Drawing.Point(453, 3);
+            this.label_tprice.Location = new System.Drawing.Point(653, 3);
             this.label_tprice.Margin = new System.Windows.Forms.Padding(3);
             this.label_tprice.Name = "label_tprice";
             this.label_tprice.Size = new System.Drawing.Size(144, 30);
@@ -178,11 +110,79 @@
             this.label_tprice.Text = "label_tprice";
             this.label_tprice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tlp_menu
+            // 
+            this.tlp_menu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tlp_menu.ColumnCount = 3;
+            this.tlp_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tlp_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlp_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tlp_menu.Controls.Add(this.label_cart, 1, 0);
+            this.tlp_menu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlp_menu.Location = new System.Drawing.Point(2, 80);
+            this.tlp_menu.Margin = new System.Windows.Forms.Padding(2);
+            this.tlp_menu.Name = "tlp_menu";
+            this.tlp_menu.RowCount = 1;
+            this.tlp_menu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlp_menu.Size = new System.Drawing.Size(800, 46);
+            this.tlp_menu.TabIndex = 0;
+            // 
+            // label_cart
+            // 
+            this.label_cart.AutoSize = true;
+            this.label_cart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_cart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_cart.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label_cart.Location = new System.Drawing.Point(31, 3);
+            this.label_cart.Margin = new System.Windows.Forms.Padding(3);
+            this.label_cart.Name = "label_cart";
+            this.label_cart.Size = new System.Drawing.Size(738, 40);
+            this.label_cart.TabIndex = 0;
+            this.label_cart.Text = "Shopping Cart";
+            this.label_cart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tlp_images
+            // 
+            this.tlp_images.ColumnCount = 3;
+            this.tlp_images.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tlp_images.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlp_images.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tlp_images.Controls.Add(this.pictureBox_business, 1, 0);
+            this.tlp_images.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlp_images.Location = new System.Drawing.Point(3, 3);
+            this.tlp_images.Name = "tlp_images";
+            this.tlp_images.RowCount = 1;
+            this.tlp_images.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlp_images.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            this.tlp_images.Size = new System.Drawing.Size(798, 72);
+            this.tlp_images.TabIndex = 1;
+            // 
+            // pictureBox_business
+            // 
+            this.pictureBox_business.BackgroundImage = global::GTDFFB_20220318_CompStore.Properties.Resources.forbidden;
+            this.pictureBox_business.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox_business.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_business.Location = new System.Drawing.Point(103, 3);
+            this.pictureBox_business.Name = "pictureBox_business";
+            this.pictureBox_business.Size = new System.Drawing.Size(592, 66);
+            this.pictureBox_business.TabIndex = 0;
+            this.pictureBox_business.TabStop = false;
+            // 
+            // panel_items
+            // 
+            this.panel_items.AutoScroll = true;
+            this.panel_items.AutoSize = true;
+            this.panel_items.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_items.Location = new System.Drawing.Point(3, 131);
+            this.panel_items.Name = "panel_items";
+            this.panel_items.Size = new System.Drawing.Size(798, 287);
+            this.panel_items.TabIndex = 2;
+            // 
             // FormCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 461);
+            this.ClientSize = new System.Drawing.Size(804, 461);
             this.Controls.Add(this.tlp_main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -193,12 +193,12 @@
             this.Load += new System.EventHandler(this.FormCart_Load);
             this.tlp_main.ResumeLayout(false);
             this.tlp_main.PerformLayout();
-            this.tlp_images.ResumeLayout(false);
-            this.tlp_menu.ResumeLayout(false);
-            this.tlp_menu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_business)).EndInit();
             this.tlp_price.ResumeLayout(false);
             this.tlp_price.PerformLayout();
+            this.tlp_menu.ResumeLayout(false);
+            this.tlp_menu.PerformLayout();
+            this.tlp_images.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_business)).EndInit();
             this.ResumeLayout(false);
 
         }

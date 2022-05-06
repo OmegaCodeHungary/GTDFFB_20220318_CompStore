@@ -31,11 +31,11 @@ namespace GTDFFB_20220318_CompStore
                 // 598
                 if (this.panel_items.Height < (Global.shoppingCart.Count * 105))
                 {
-                    this.Width = 640;
+                    this.Width = 840;
                 }
                 else
                 {
-                    this.Width = 620;
+                    this.Width = 820;
                 }
 
                 this.Refresh();
@@ -55,7 +55,7 @@ namespace GTDFFB_20220318_CompStore
 
             }
 
-            this.label_tprice.Text = Global.shoppingCart.Sum(s => s.Price).ToString("C0");
+            this.label_tprice.Text = Global.shoppingCart.Sum(s => (s.Pieces * s.Price)).ToString("C0");
         }
 
         public void ChangeHandler()

@@ -29,7 +29,26 @@ namespace GTDFFB_20220318_CompStore
 
         private void button_add_cart_Click(object sender, EventArgs e)
         {
-            Global.shoppingCart.Add(getItem);
+            try
+            {
+                // Első körben megnézzük, hogy létezik-e már ez az item a kosárban
+                Item item = Global.shoppingCart.Where(x => x.Id == getItem.Id).FirstOrDefault();
+                if (item == null || item.Pieces == 0)
+                {
+                    // Amennyiben nem létezik, akkor hozzáadjuk
+                    getItem.Pieces = 1;
+                    Global.shoppingCart.Add(getItem);
+                }
+                else
+                {
+                    // Ha igen, akkor az értékét növeljük eggyel
+                    item.Pieces = item.Pieces + 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
